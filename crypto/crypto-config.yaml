@@ -1,0 +1,34 @@
+OrdererOrgs:
+  - Name: OrdererOrg
+    Domain: blockport.com
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  - Name: ShippingOrg
+    Domain: shippingorg.blockport.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1    # Number of client identities for Org1
+
+  - Name: PortOrg
+    Domain: portorg.blockport.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1    # Number of client identities for Org2
+
+  - Name: WarehouseOrg
+    Domain: warehouseorg.blockport.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1    # Number of client identities for Org2
+
+  - Name: TruckOrg
+    Domain: truckorg.blockport.com
+    Template:
+      Count: 2
+    Users:
+      Count: 1    # Number of client identities for Org2

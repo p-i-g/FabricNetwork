@@ -1,0 +1,134 @@
+version: '3'
+
+services:
+  # ShippingOrg Peers
+  peer0.shippingorg.blockport.com:
+    image: hyperledger/fabric-peer
+    environment:
+      - CORE_PEER_ID=peer0.shippingorg.blockport.com
+      - CORE_PEER_ADDRESS=peer0.shippingorg.blockport.com:7051
+      - CORE_PEER_LOCALMSPID=ShippingOrgMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
+      - CORE_PEER_CHAINCODELISTENADDRESS=peer0.shippingorg.blockport.com:7052
+    ports:
+      - 7051:7051
+      - 7052:7052
+    volumes:
+      - ./crypto/crypto-config/peerOrganizations/shippingorg.blockport.com/peers/peer0.shippingorg.blockport.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto/crypto-config/peerOrganizations/shippingorg.blockport.com/peers/peer0.shippingorg.blockport.com/tls:/etc/hyperledger/fabric/tls
+    command: peer node start
+
+  peer1.shippingorg.blockport.com:
+    image: hyperledger/fabric-peer
+    environment:
+      - CORE_PEER_ID=peer1.shippingorg.blockport.com
+      - CORE_PEER_ADDRESS=peer1.shippingorg.blockport.com:7051
+      - CORE_PEER_LOCALMSPID=ShippingOrgMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
+      - CORE_PEER_CHAINCODELISTENADDRESS=peer1.shippingorg.blockport.com:7052
+    ports:
+      - 8051:7051
+      - 8052:7052
+    volumes:
+      - ./crypto/crypto-config/peerOrganizations/shippingorg.blockport.com/peers/peer1.shippingorg.blockport.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto/crypto-config/peerOrganizations/shippingorg.blockport.com/peers/peer1.shippingorg.blockport.com/tls:/etc/hyperledger/fabric/tls
+    command: peer node start
+
+  # PortOrg Peers
+  peer0.portorg.blockport.com:
+    image: hyperledger/fabric-peer
+    environment:
+      - CORE_PEER_ID=peer0.portorg.blockport.com
+      - CORE_PEER_ADDRESS=peer0.portorg.blockport.com:7051
+      - CORE_PEER_LOCALMSPID=PortOrgMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
+      - CORE_PEER_CHAINCODELISTENADDRESS=peer0.portorg.blockport.com:7052
+    ports:
+      - 9051:7051
+      - 9052:7052
+    volumes:
+      - ./crypto/crypto-config/peerOrganizations/portorg.blockport.com/peers/peer0.portorg.blockport.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto/crypto-config/peerOrganizations/portorg.blockport.com/peers/peer0.portorg.blockport.com/tls:/etc/hyperledger/fabric/tls
+    command: peer node start
+
+  peer1.portorg.blockport.com:
+    image: hyperledger/fabric-peer
+    environment:
+      - CORE_PEER_ID=peer1.portorg.blockport.com
+      - CORE_PEER_ADDRESS=peer1.portorg.blockport.com:7051
+      - CORE_PEER_LOCALMSPID=PortOrgMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
+      - CORE_PEER_CHAINCODELISTENADDRESS=peer1.portorg.blockport.com:7052
+    ports:
+      - 10051:7051
+      - 10052:7052
+    volumes:
+      - ./crypto/crypto-config/peerOrganizations/portorg.blockport.com/peers/peer1.portorg.blockport.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto/crypto-config/peerOrganizations/portorg.blockport.com/peers/peer1.portorg.blockport.com/tls:/etc/hyperledger/fabric/tls
+    command: peer node start
+
+  # TruckOrg Peers
+  peer0.truckorg.blockport.com:
+    image: hyperledger/fabric-peer
+    environment:
+      - CORE_PEER_ID=peer0.truckorg.blockport.com
+      - CORE_PEER_ADDRESS=peer0.truckorg.blockport.com:7051
+      - CORE_PEER_LOCALMSPID=TruckOrgMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
+      - CORE_PEER_CHAINCODELISTENADDRESS=peer0.truckorg.blockport.com:7052
+    ports:
+      - 11051:7051
+      - 11052:7052
+    volumes:
+      - ./crypto/crypto-config/peerOrganizations/truckorg.blockport.com/peers/peer0.truckorg.blockport.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto/crypto-config/peerOrganizations/truckorg.blockport.com/peers/peer0.truckorg.blockport.com/tls:/etc/hyperledger/fabric/tls
+    command: peer node start
+
+  peer1.truckorg.blockport.com:
+    image: hyperledger/fabric-peer
+    environment:
+      - CORE_PEER_ID=peer1.truckorg.blockport.com
+      - CORE_PEER_ADDRESS=peer1.truckorg.blockport.com:7051
+      - CORE_PEER_LOCALMSPID=TruckOrgMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
+      - CORE_PEER_CHAINCODELISTENADDRESS=peer1.truckorg.blockport.com:7052
+    ports:
+      - 12051:7051
+      - 12052:7052
+    volumes:
+      - ./crypto/crypto-config/peerOrganizations/truckorg.blockport.com/peers/peer1.truckorg.blockport.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto/crypto-config/peerOrganizations/truckorg.blockport.com/peers/peer1.truckorg.blockport.com/tls:/etc/hyperledger/fabric/tls
+    command: peer node start
+
+  # WarehouseOrg Peers
+  peer0.warehouseorg.blockport.com:
+    image: hyperledger/fabric-peer
+    environment:
+      - CORE_PEER_ID=peer0.warehouseorg.blockport.com
+      - CORE_PEER_ADDRESS=peer0.warehouseorg.blockport.com:7051
+      - CORE_PEER_LOCALMSPID=WarehouseOrgMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
+      - CORE_PEER_CHAINCODELISTENADDRESS=peer0.warehouseorg.blockport.com:7052
+    ports:
+      - 13051:7051
+      - 13052:7052
+    volumes:
+      - ./crypto/crypto-config/peerOrganizations/warehouseorg.blockport.com/peers/peer0.warehouseorg.blockport.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto/crypto-config/peerOrganizations/warehouseorg.blockport.com/peers/peer0.warehouseorg.blockport.com/tls:/etc/hyperledger/fabric/tls
+    command: peer node start
+
+  peer1.warehouseorg.blockport.com:
+    image: hyperledger/fabric-peer
+    environment:
+      - CORE_PEER_ID=peer1.warehouseorg.blockport.com
+      - CORE_PEER_ADDRESS=peer1.warehouseorg.blockport.com:7051
+      - CORE_PEER_LOCALMSPID=WarehouseOrgMSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
+      - CORE_PEER_CHAINCODELISTENADDRESS=peer1.warehouseorg.blockport.com:7052
+    ports:
+      - 14051:7051
+      - 14052:7052
+    volumes:
+      - ./crypto/crypto-config/peerOrganizations/warehouseorg.blockport.com/peers/peer1.warehouseorg.blockport.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto/crypto-config/peerOrganizations/warehouseorg.blockport.com/peers/peer1.warehouseorg.blockport.com/tls:/etc/hyperledger/fabric/tls
+    command: peer node start

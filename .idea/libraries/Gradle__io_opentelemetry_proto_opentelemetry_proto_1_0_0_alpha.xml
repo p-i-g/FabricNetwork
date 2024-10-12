@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: io.opentelemetry.proto:opentelemetry-proto:1.0.0-alpha" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.opentelemetry.proto" artifactId="opentelemetry-proto" version="1.0.0-alpha" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentelemetry.proto/opentelemetry-proto/1.0.0-alpha/aef3ea96207d6199d97f3cecd1674663894eade1/opentelemetry-proto-1.0.0-alpha.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,6 +1,19 @@
 version: '3'
 
 services:
+  orderer.blockport.com: # There can be multiple orderers
+    image: hyperledger/fabric-orderer
+    container_name: orderer.blockport.com
+    hostname: orderer.blockport.com
+    environment:
+      - ORDERER_GENERAL_TLS_CLIENTAUTHREQUIRED=true
+    ports:
+      - "7050:7050"
+    volumes:
+      - ./network-config/genesis.block:/etc/hyperledger/fabric/genesisblock
+      - ./crypto/crypto-config/ordererOrganizations/blockport.com/orderers/orderer.blockport.com/msp:/etc/hyperledger/fabric/msp
+      - ./crypto/crypto-config/ordererOrganizations/blockport.com/orderers/orderer.blockport.com/tls:/etc/hyperledger/fabric/tls
+    command: orderer start
   # ShippingOrg Peers
   peer0.shippingorg.blockport.com:
     image: hyperledger/fabric-peer

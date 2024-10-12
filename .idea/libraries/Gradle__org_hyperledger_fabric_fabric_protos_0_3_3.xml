@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.hyperledger.fabric:fabric-protos:0.3.3" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.hyperledger.fabric" artifactId="fabric-protos" version="0.3.3" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hyperledger.fabric/fabric-protos/0.3.3/6ce59e6afed185b2b783d7a4dad447703fb230bf/fabric-protos-0.3.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

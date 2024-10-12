@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.damnhandy:handy-uri-templates:2.1.8" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.damnhandy" artifactId="handy-uri-templates" version="2.1.8" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.damnhandy/handy-uri-templates/2.1.8/170102d8e1d6fcc5e8f9bef45de923285dd3a80f/handy-uri-templates-2.1.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

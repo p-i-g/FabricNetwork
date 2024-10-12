@@ -14,8 +14,8 @@ Organizations:
       Admins:
         Type: Signature
         Rule: "OR('OrdererMSP.admin')"
-    OrdererEndpoints:
-      - orderer.blockport.com:7050
+#    OrdererEndpoints:
+#      - orderer.blockport.com:7050
 
   - &PortOrg
     Name: PortOrgMSP
@@ -100,7 +100,7 @@ Capabilities:
     # prior releases.
     # Prior to enabling V3.0 channel capabilities, ensure that all
     # orderers and peers on a channel are at v3.0.0 or later.
-    V3_0: true
+    V2_0: true
   # Orderer capabilities apply only to the orderers, and may be safely
   # used with prior release peers.
   # Set the value of the capability to true to require it.
@@ -120,7 +120,7 @@ Capabilities:
     # features of fabric v2.5, namely the ability to purge private data.
     # Prior to enabling V2.5 application capabilities, ensure that all
     # peers on a channel are at v2.5.0 or later.
-    V2_5: true
+    V2_0: true
 
 Application: &ApplicationDefaults
 

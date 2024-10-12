@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.everit-org.json-schema:org.everit.json.schema:1.14.4" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.everit-org.json-schema" artifactId="org.everit.json.schema" version="1.14.4" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.everit-org.json-schema/org.everit.json.schema/1.14.4/9ad144df7fe5be85cc8c6b68500b883b24ba8902/org.everit.json.schema-1.14.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

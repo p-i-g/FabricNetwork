@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="Chaincode:main" external.linked.project.path="$MODULE_DIR$/../../Chaincode" external.root.project.path="$MODULE_DIR$/../../Chaincode" external.system.id="GRADLE" external.system.module.group="com.blockport" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+    <output url="file://$MODULE_DIR$/../../Chaincode/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../Chaincode/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../Chaincode/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Chaincode/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.hyperledger.fabric-chaincode-java:fabric-chaincode-shim:2.5.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-simple:1.7.30" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.30" level="project" />
+    <orderEntry type="library" name="Gradle: org.json:json:20240303" level="project" />
+    <orderEntry type="library" name="Gradle: com.owlike:genson:1.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.everit-org.json-schema:org.everit.json.schema:1.14.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-cli:commons-cli:1.6.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.hyperledger.fabric:fabric-protos:0.3.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.bouncycastle:bcpkix-jdk18on:1.78.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.bouncycastle:bcprov-jdk18on:1.78.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.github.classgraph:classgraph:4.8.165" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.protobuf:protobuf-java-util:3.24.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.grpc:grpc-netty-shaded:1.60.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.grpc:grpc-protobuf:1.60.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.grpc:grpc-stub:1.60.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry.instrumentation:opentelemetry-grpc-1.6:1.32.0-alpha" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-extension-trace-propagators:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-exporter-otlp:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-sdk:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-sdk-trace:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-api:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry.proto:opentelemetry-proto:1.0.0-alpha" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-validator:commons-validator:1.7" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.damnhandy:handy-uri-templates:2.1.8" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.re2j:re2j:1.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.bouncycastle:bcutil-jdk18on:1.78.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.protobuf:protobuf-java:3.24.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.guava:guava:32.0.1-jre" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.code.gson:gson:2.10.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.errorprone:error_prone_annotations:2.20.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.j2objc:j2objc-annotations:2.8" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.grpc:grpc-core:1.60.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.perfmark:perfmark-api:0.26.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.grpc:grpc-protobuf-lite:1.60.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.grpc:grpc-api:1.60.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.api.grpc:proto-google-common-protos:2.22.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry.instrumentation:opentelemetry-instrumentation-api-semconv:1.32.0-alpha" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry.instrumentation:opentelemetry-instrumentation-api:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-sdk-extension-autoconfigure-spi:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-api-events:1.32.0-alpha" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-sdk-metrics:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-sdk-logs:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-exporter-sender-okhttp:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-exporter-otlp-common:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-sdk-common:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-context:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-digester:commons-digester:2.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-collections:commons-collections:3.2.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: joda-time:joda-time:2.10.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.guava:failureaccess:1.0.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.checkerframework:checker-qual:3.33.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.grpc:grpc-context:1.60.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.grpc:grpc-util:1.60.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.android:annotations:4.1.1.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.23" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry.semconv:opentelemetry-semconv:1.21.0-alpha" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-extension-incubator:1.32.0-alpha" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: io.opentelemetry:opentelemetry-exporter-common:1.32.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.squareup.okhttp3:okhttp:4.12.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.squareup.okio:okio-jvm:3.6.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.9.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.9.10" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+  </component>
+</module>

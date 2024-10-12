@@ -1,0 +1,199 @@
+{
+  "name": "blockport-network",
+  "description": "Sample network contains 8 peers (4 orgs), 1 orderer, and 4 CAs for Python SDK testing",
+  "version": "0.1",
+  "client": {
+    "organization": "ShippingOrg",
+    "credentialStore": {
+      "path": "/tmp/hfc-kvs",
+      "cryptoStore": {
+        "path": "/tmp/hfc-cvs"
+      },
+      "wallet": "wallet-name"
+    }
+  },
+  "organizations": {
+    "orderer.example.com": {
+      "mspid": "OrdererMSP",
+      "orderers": [
+        "orderer.blockport.com"
+      ],
+      "certificateAuthorities": [
+        "ca-orderer"
+      ],
+      "users": {
+        "Admin": {
+          "cert": "./crypto/crypto-config/ordererOrganizations/blockport.com/users/Admin@blockport.com/msp/signcerts/Admin@blockport.com-cert.pem",
+          "private_key": "./crypto/crypto-config/ordererOrganizations/blockport.com/users/Admin@blockport.com/msp/keystore/priv_sk"
+        }
+      }
+    },
+    "shippingorg.blockport.com": {
+      "mspid": "ShippingOrgMSP",
+      "peers": [
+        "peer0.shippingorg.blockport.com",
+        "peer1.shippingorg.blockport.com"
+      ],
+      "certificateAuthorities": [
+        "ca-shippingorg"
+      ],
+      "users": {
+        "Admin": {
+          "cert": "./crypto/crypto-config/peerOrganizations/shippingorg.blockport.com/users/Admin@shippingorg.blockport.com/msp/signcerts/Admin@shippingorg.blockport.com-cert.pem",
+          "private_key": "./crypto/crypto-config/peerOrganizations/shippingorg.blockport.com/users/Admin@shippingorg.blockport.com/msp/keystore/priv_sk"
+        }
+      }
+    },
+    "portorg.blockport.com": {
+      "mspid": "PortOrgMSP",
+      "peers": [
+        "peer0.portorg.blockport.com",
+        "peer1.portorg.blockport.com"
+      ],
+      "certificateAuthorities": [
+        "ca-portorg"
+      ],
+      "users": {
+        "Admin": {
+          "cert": "./crypto/crypto-config/peerOrganizations/portorg.blockport.com/users/Admin@portorg.blockport.com/msp/signcerts/Admin@portorg.blockport.com-cert.pem",
+          "private_key": "./crypto/crypto-config/peerOrganizations/portorg.blockport.com/users/Admin@portorg.blockport.com/msp/keystore/priv_sk"
+        }
+      }
+    },
+    "truckorg.blockport.com": {
+      "mspid": "TruckOrgMSP",
+      "peers": [
+        "peer0.truckorg.blockport.com",
+        "peer1.truckorg.blockport.com"
+      ],
+      "certificateAuthorities": [
+        "ca-truckorg"
+      ],
+      "users": {
+        "Admin": {
+          "cert": "./crypto/crypto-config/peerOrganizations/truckorg.blockport.com/users/Admin@truckorg.blockport.com/msp/signcerts/Admin@truckorg.blockport.com-cert.pem",
+          "private_key": "./crypto/crypto-config/peerOrganizations/truckorg.blockport.com/users/Admin@truckorg.blockport.com/msp/keystore/priv_sk"
+        }
+      }
+    },
+    "warehouseorg.blockport.com": {
+      "mspid": "WarehouseOrgMSP",
+      "peers": [
+        "peer0.warehouseorg.blockport.com",
+        "peer1.warehouseorg.blockport.com"
+      ],
+      "certificateAuthorities": [
+        "ca-warehouseorg"
+      ],
+      "users": {
+        "Admin": {
+          "cert": "./crypto/crypto-config/peerOrganizations/warehouseorg.blockport.com/users/Admin@warehouseorg.blockport.com/msp/signcerts/Admin@warehouseorg.blockport.com-cert.pem",
+          "private_key": "./crypto/crypto-config/peerOrganizations/warehouseorg.blockport.com/users/Admin@warehouseorg.blockport.com/msp/keystore/priv_sk"
+        }
+      }
+    }
+  },
+  "orderers": {
+    "orderer.example.com": {
+      "url": "localhost:7050",
+      "grpcOptions": {
+        "grpc.ssl_target_name_override": "orderer.example.com",
+        "grpc-max-send-message-length": 15
+      }
+    }
+  },
+  "peers": {
+    "peer0.shippingorg.blockport.com": {
+      "url": "localhost:7051",
+      "eventUrl": "localhost:7053",
+      "grpcOptions": {
+        "grpc.ssl_target_name_override": "peer0.shippingorg.blockport.com",
+        "grpc.http2.keepalive_time": 15
+      }
+    },
+    "peer1.shippingorg.blockport.com": {
+      "url": "localhost:8051",
+      "eventUrl": "localhost:8053",
+      "grpcOptions": {
+        "grpc.ssl_target_name_override": "peer1.shippingorg.blockport.com"
+      }
+    },
+    "peer0.portorg.blockport.com": {
+      "url": "localhost:9051",
+      "eventUrl": "localhost:9053",
+      "grpcOptions": {
+        "grpc.ssl_target_name_override": "peer0.portorg.blockport.com",
+        "grpc.http2.keepalive_time": 15
+      }
+    },
+    "peer1.portorg.blockport.com": {
+      "url": "localhost:10051",
+      "eventUrl": "localhost:10053",
+      "grpcOptions": {
+        "grpc.ssl_target_name_override": "peer1.portorg.blockport.com"
+      }
+    },
+    "peer0.truckorg.blockport.com": {
+      "url": "localhost:11051",
+      "eventUrl": "localhost:11053",
+      "grpcOptions": {
+        "grpc.ssl_target_name_override": "peer0.truckorg.blockport.com",
+        "grpc.http2.keepalive_time": 15
+      }
+    },
+    "peer1.truckorg.blockport.com": {
+      "url": "localhost:12051",
+      "eventUrl": "localhost:12053",
+      "grpcOptions": {
+        "grpc.ssl_target_name_override": "peer1.truckorg.blockport.com"
+      }
+    },
+    "peer0.warehouseorg.blockport.com": {
+      "url": "localhost:13051",
+      "eventUrl": "localhost:13053",
+      "grpcOptions": {
+        "grpc.ssl_target_name_override": "peer0.warehouseorg.blockport.com",
+        "grpc.http2.keepalive_time": 15
+      }
+    },
+    "peer1.warehouseorg.blockport.com": {
+      "url": "localhost:14051",
+      "eventUrl": "localhost:14053",
+      "grpcOptions": {
+        "grpc.ssl_target_name_override": "peer1.warehouseorg.blockport.com"
+      }
+    }
+  },
+  "certificateAuthorities": {
+    "ca-shippingorg": {
+      "url": "https://localhost:7054",
+      "grpcOptions": {
+        "verify": true
+      },
+      "tlsCACerts": {
+        "path": "path/to/shippingorg/ca-cert.pem"
+      },
+      "registrar": [
+        {
+          "enrollId": "admin",
+          "enrollSecret": "adminpw"
+        }
+      ]
+    },
+    "ca-portorg": {
+      "url": "https://localhost:8054",
+      "grpcOptions": {
+        "verify": true
+      },
+      "tlsCACerts": {
+        "path": "path/to/portorg/ca-cert.pem"
+      },
+      "registrar": [
+        {
+          "enrollId": "admin",
+          "enrollSecret": "adminpw"
+        }
+      ]
+    }
+  }
+}
